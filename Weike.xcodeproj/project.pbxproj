@@ -790,13 +790,14 @@
 		1FB1561D1EDD5D4C00600F8E /* WKBaseCollectionCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB1561C1EDD5D4C00600F8E /* WKBaseCollectionCellView.xib */; };
 		1FB156231EDDC01400600F8E /* WKMyPublishCollecCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156221EDDC01400600F8E /* WKMyPublishCollecCell.m */; };
 		1FB156271EDDC49000600F8E /* WKBaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156251EDDC49000600F8E /* WKBaseCollectionCell.m */; };
-		1FB1562E1EDEFE2B00600F8E /* WKMyWeikeCollecCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1562D1EDEFE2B00600F8E /* WKMyWeikeCollecCell.m */; };
 		1FB156321EE2DA1300600F8E /* WKPlazaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156301EE2DA1300600F8E /* WKPlazaCell.m */; };
 		1FB156331EE2DA1300600F8E /* WKPlazaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB156311EE2DA1300600F8E /* WKPlazaCell.xib */; };
 		1FB1563B1EE2EAD400600F8E /* WKWeikePlazaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1563A1EE2EAD400600F8E /* WKWeikePlazaController.m */; };
 		1FB1563E1EE5971600600F8E /* WKTeacherIntro.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1563D1EE5971600600F8E /* WKTeacherIntro.m */; };
 		1FB156421EE5978400600F8E /* WKTeacherIntro.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB156411EE5978400600F8E /* WKTeacherIntro.xib */; };
 		1FB156451EE5A53600600F8E /* WKTeacherCourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156441EE5A53600600F8E /* WKTeacherCourseCell.m */; };
+		1FB156491EE6EB0400600F8E /* WKMyWeikeCollecCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156481EE6EB0400600F8E /* WKMyWeikeCollecCell.m */; };
+		1FB1564F1EE6F36100600F8E /* WKTeacherCourseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1564E1EE6F36100600F8E /* WKTeacherCourseController.m */; };
 		1FCAFE891EDD3FEF0032E22F /* WKBaseCollectionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCAFE881EDD3FEF0032E22F /* WKBaseCollectionCellView.m */; };
 /* End PBXBuildFile section */
 
@@ -1617,8 +1618,6 @@
 		1FB156221EDDC01400600F8E /* WKMyPublishCollecCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKMyPublishCollecCell.m; sourceTree = "<group>"; };
 		1FB156241EDDC49000600F8E /* WKBaseCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBaseCollectionCell.h; sourceTree = "<group>"; };
 		1FB156251EDDC49000600F8E /* WKBaseCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBaseCollectionCell.m; sourceTree = "<group>"; };
-		1FB1562C1EDEFE2B00600F8E /* WKMyWeikeCollecCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKMyWeikeCollecCell.h; path = "../../../../../old file /night/WKMyWeikeCollecCell.h"; sourceTree = "<group>"; };
-		1FB1562D1EDEFE2B00600F8E /* WKMyWeikeCollecCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKMyWeikeCollecCell.m; path = "../../../../../old file /night/WKMyWeikeCollecCell.m"; sourceTree = "<group>"; };
 		1FB1562F1EE2DA1300600F8E /* WKPlazaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKPlazaCell.h; sourceTree = "<group>"; };
 		1FB156301EE2DA1300600F8E /* WKPlazaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKPlazaCell.m; sourceTree = "<group>"; };
 		1FB156311EE2DA1300600F8E /* WKPlazaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKPlazaCell.xib; sourceTree = "<group>"; };
@@ -1630,6 +1629,10 @@
 		1FB156431EE5A53600600F8E /* WKTeacherCourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTeacherCourseCell.h; sourceTree = "<group>"; };
 		1FB156441EE5A53600600F8E /* WKTeacherCourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTeacherCourseCell.m; sourceTree = "<group>"; };
 		1FB156461EE5B01400600F8E /* WKBaseCollectionCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKBaseCollectionCellView.h; sourceTree = "<group>"; };
+		1FB156471EE6EB0400600F8E /* WKMyWeikeCollecCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKMyWeikeCollecCell.h; sourceTree = "<group>"; };
+		1FB156481EE6EB0400600F8E /* WKMyWeikeCollecCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKMyWeikeCollecCell.m; sourceTree = "<group>"; };
+		1FB1564D1EE6F36100600F8E /* WKTeacherCourseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTeacherCourseController.h; sourceTree = "<group>"; };
+		1FB1564E1EE6F36100600F8E /* WKTeacherCourseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTeacherCourseController.m; sourceTree = "<group>"; };
 		1FCAFE881EDD3FEF0032E22F /* WKBaseCollectionCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBaseCollectionCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2980,8 +2983,8 @@
 				1FB1561C1EDD5D4C00600F8E /* WKBaseCollectionCellView.xib */,
 				1FB156241EDDC49000600F8E /* WKBaseCollectionCell.h */,
 				1FB156251EDDC49000600F8E /* WKBaseCollectionCell.m */,
-				1FB1562C1EDEFE2B00600F8E /* WKMyWeikeCollecCell.h */,
-				1FB1562D1EDEFE2B00600F8E /* WKMyWeikeCollecCell.m */,
+				1FB156471EE6EB0400600F8E /* WKMyWeikeCollecCell.h */,
+				1FB156481EE6EB0400600F8E /* WKMyWeikeCollecCell.m */,
 				1FB156211EDDC01400600F8E /* WKMyPublishCollecCell.h */,
 				1FB156221EDDC01400600F8E /* WKMyPublishCollecCell.m */,
 			);
@@ -3035,6 +3038,8 @@
 			children = (
 				1FB156391EE2EAD400600F8E /* WKWeikePlazaController.h */,
 				1FB1563A1EE2EAD400600F8E /* WKWeikePlazaController.m */,
+				1FB1564D1EE6F36100600F8E /* WKTeacherCourseController.h */,
+				1FB1564E1EE6F36100600F8E /* WKTeacherCourseController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3999,10 +4004,11 @@
 				1F854E891ED48BA0004D2148 /* WKSelectTextField.m in Sources */,
 				1F854E7A1ED18BE9004D2148 /* WKButtonTextField.m in Sources */,
 				1F85482C1ED184F3004D2148 /* WKBaseViewController.m in Sources */,
+				1FB1564F1EE6F36100600F8E /* WKTeacherCourseController.m in Sources */,
 				1FB156231EDDC01400600F8E /* WKMyPublishCollecCell.m in Sources */,
+				1FB156491EE6EB0400600F8E /* WKMyWeikeCollecCell.m in Sources */,
 				1F854E761ED187A0004D2148 /* WKLoginController.m in Sources */,
 				1F8547EA1ECDD9D5004D2148 /* AppDelegate.m in Sources */,
-				1FB1562E1EDEFE2B00600F8E /* WKMyWeikeCollecCell.m in Sources */,
 				1F8547E71ECDD9D5004D2148 /* main.m in Sources */,
 				1F854E851ED46B5C004D2148 /* WKOptimizeInfoController.m in Sources */,
 			);

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "WKBaseCollectionCellView.h"
 
-@interface WKMyWeikeCollecCell : WKBaseCollectionCell
+@interface WKMyWeikeCollecCell : UICollectionViewCell
 
 @end

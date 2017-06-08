@@ -28,15 +28,15 @@
     [self addSubview:baseView];
     self.baseView = baseView;
     
-    UIImage *image = [UIImage imageNamed:@"u2133"];
-    UIImageView *videoImage = [[UIImageView alloc] initWithImage:image];
-    videoImage.backgroundColor = [UIColor cyanColor];
-    [self addSubview:videoImage];
-    CGRect frame = videoImage.frame;
-    frame.size = image.size;
-    frame.origin = CGPointMake(0, 0);
-    videoImage.frame = frame;
-    self.videoImage = videoImage;
+//    UIImage *image = [UIImage imageNamed:@"u2133"];
+//    UIImageView *videoImage = [[UIImageView alloc] initWithImage:image];
+//    videoImage.backgroundColor = [UIColor cyanColor];
+//    [self addSubview:videoImage];
+//    CGRect frame = videoImage.frame;
+//    frame.size = image.size;
+//    frame.origin = CGPointMake(0, 0);
+//    videoImage.frame = frame;
+//    self.videoImage = videoImage;
 }
 
 - (void)layoutSubviews
@@ -44,7 +44,7 @@
     [super layoutSubviews];
     
     _baseView.frame = self.bounds;
-    self.videoImage.center = _baseView.center;
+//    self.videoImage.center = _baseView.center;
 }
 
 @end

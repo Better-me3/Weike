@@ -8,6 +8,7 @@
 
 #import "WKWeikePlazaController.h"
 #import "WKPlazaCell.h"
+#import "WKTeacherCourseController.h"
 
 #define kIdentifier @"plaza"
 
@@ -61,9 +62,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     WKPlazaCell *cell = [tableView dequeueReusableCellWithIdentifier:kIdentifier];
-    if (!cell) {
-        cell = [[WKPlazaCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kIdentifier];
-    }
+    
     return cell;
 }
 
@@ -72,5 +71,11 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 170;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    WKTeacherCourseController *courseController = [[WKTeacherCourseController alloc] init];
+    [self presentViewController:courseController animated:YES completion:nil];
 }
 @end
