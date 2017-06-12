@@ -491,11 +491,12 @@
 		1FB156321EE2DA1300600F8E /* WKPlazaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156301EE2DA1300600F8E /* WKPlazaCell.m */; };
 		1FB156331EE2DA1300600F8E /* WKPlazaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB156311EE2DA1300600F8E /* WKPlazaCell.xib */; };
 		1FB1563B1EE2EAD400600F8E /* WKWeikePlazaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1563A1EE2EAD400600F8E /* WKWeikePlazaController.m */; };
-		1FB1563E1EE5971600600F8E /* WKTeacherIntro.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1563D1EE5971600600F8E /* WKTeacherIntro.m */; };
-		1FB156421EE5978400600F8E /* WKTeacherIntro.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB156411EE5978400600F8E /* WKTeacherIntro.xib */; };
+		1FB1563E1EE5971600600F8E /* WKTeacherIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1563D1EE5971600600F8E /* WKTeacherIntroView.m */; };
+		1FB156421EE5978400600F8E /* WKTeacherIntroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB156411EE5978400600F8E /* WKTeacherIntroView.xib */; };
 		1FB156451EE5A53600600F8E /* WKTeacherCourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156441EE5A53600600F8E /* WKTeacherCourseCell.m */; };
 		1FB156491EE6EB0400600F8E /* WKMyWeikeCollecCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156481EE6EB0400600F8E /* WKMyWeikeCollecCell.m */; };
 		1FB1564F1EE6F36100600F8E /* WKTeacherCourseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1564E1EE6F36100600F8E /* WKTeacherCourseController.m */; };
+		1FB156531EED21C600600F8E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156521EED21C600600F8E /* UIView+Extension.m */; };
 		1FCAFE891EDD3FEF0032E22F /* WKBaseCollectionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCAFE881EDD3FEF0032E22F /* WKBaseCollectionCellView.m */; };
 /* End PBXBuildFile section */
 
@@ -1019,9 +1020,9 @@
 		1FB156311EE2DA1300600F8E /* WKPlazaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKPlazaCell.xib; sourceTree = "<group>"; };
 		1FB156391EE2EAD400600F8E /* WKWeikePlazaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWeikePlazaController.h; sourceTree = "<group>"; };
 		1FB1563A1EE2EAD400600F8E /* WKWeikePlazaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWeikePlazaController.m; sourceTree = "<group>"; };
-		1FB1563C1EE5971600600F8E /* WKTeacherIntro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTeacherIntro.h; sourceTree = "<group>"; };
-		1FB1563D1EE5971600600F8E /* WKTeacherIntro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTeacherIntro.m; sourceTree = "<group>"; };
-		1FB156411EE5978400600F8E /* WKTeacherIntro.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKTeacherIntro.xib; sourceTree = "<group>"; };
+		1FB1563C1EE5971600600F8E /* WKTeacherIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTeacherIntroView.h; sourceTree = "<group>"; };
+		1FB1563D1EE5971600600F8E /* WKTeacherIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTeacherIntroView.m; sourceTree = "<group>"; };
+		1FB156411EE5978400600F8E /* WKTeacherIntroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKTeacherIntroView.xib; sourceTree = "<group>"; };
 		1FB156431EE5A53600600F8E /* WKTeacherCourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTeacherCourseCell.h; sourceTree = "<group>"; };
 		1FB156441EE5A53600600F8E /* WKTeacherCourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTeacherCourseCell.m; sourceTree = "<group>"; };
 		1FB156461EE5B01400600F8E /* WKBaseCollectionCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKBaseCollectionCellView.h; sourceTree = "<group>"; };
@@ -1029,6 +1030,9 @@
 		1FB156481EE6EB0400600F8E /* WKMyWeikeCollecCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKMyWeikeCollecCell.m; sourceTree = "<group>"; };
 		1FB1564D1EE6F36100600F8E /* WKTeacherCourseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTeacherCourseController.h; sourceTree = "<group>"; };
 		1FB1564E1EE6F36100600F8E /* WKTeacherCourseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTeacherCourseController.m; sourceTree = "<group>"; };
+		1FB156511EED21C600600F8E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		1FB156521EED21C600600F8E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		1FB156541EED22FA00600F8E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1FCAFE881EDD3FEF0032E22F /* WKBaseCollectionCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBaseCollectionCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1082,6 +1086,7 @@
 			children = (
 				1F8547E81ECDD9D5004D2148 /* AppDelegate.h */,
 				1F8547E91ECDD9D5004D2148 /* AppDelegate.m */,
+				1FB156541EED22FA00600F8E /* PrefixHeader.pch */,
 				1F85482E1ED1851D004D2148 /* Login */,
 				1F85482D1ED18513004D2148 /* HomePage */,
 				1F8548361ED1853D004D2148 /* WeikePlaza */,
@@ -1187,6 +1192,7 @@
 		1F8548371ED1854C004D2148 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1FB156501EED21C600600F8E /* Category */,
 				1F8548381ED1854C004D2148 /* images */,
 			);
 			path = Source;
@@ -2143,9 +2149,9 @@
 				1FB1562F1EE2DA1300600F8E /* WKPlazaCell.h */,
 				1FB156301EE2DA1300600F8E /* WKPlazaCell.m */,
 				1FB156311EE2DA1300600F8E /* WKPlazaCell.xib */,
-				1FB1563C1EE5971600600F8E /* WKTeacherIntro.h */,
-				1FB1563D1EE5971600600F8E /* WKTeacherIntro.m */,
-				1FB156411EE5978400600F8E /* WKTeacherIntro.xib */,
+				1FB1563C1EE5971600600F8E /* WKTeacherIntroView.h */,
+				1FB1563D1EE5971600600F8E /* WKTeacherIntroView.m */,
+				1FB156411EE5978400600F8E /* WKTeacherIntroView.xib */,
 				1FB156431EE5A53600600F8E /* WKTeacherCourseCell.h */,
 				1FB156441EE5A53600600F8E /* WKTeacherCourseCell.m */,
 			);
@@ -2174,6 +2180,15 @@
 				1F854E881ED48BA0004D2148 /* WKSelectTextField.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1FB156501EED21C600600F8E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1FB156511EED21C600600F8E /* UIView+Extension.h */,
+				1FB156521EED21C600600F8E /* UIView+Extension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2361,7 +2376,7 @@
 				1F854BD71ED1854E004D2148 /* u2064.png in Resources */,
 				1F854B801ED1854E004D2148 /* u3483p000.png in Resources */,
 				1F854C581ED1854E004D2148 /* u2581.png in Resources */,
-				1FB156421EE5978400600F8E /* WKTeacherIntro.xib in Resources */,
+				1FB156421EE5978400600F8E /* WKTeacherIntroView.xib in Resources */,
 				1F854D2C1ED1854E004D2148 /* 2_u11.png in Resources */,
 				1F854BCC1ED1854E004D2148 /* u2018.png in Resources */,
 				1F854C4D1ED1854E004D2148 /* u2542.png in Resources */,
@@ -2783,7 +2798,8 @@
 				1FB1563B1EE2EAD400600F8E /* WKWeikePlazaController.m in Sources */,
 				1FB156321EE2DA1300600F8E /* WKPlazaCell.m in Sources */,
 				1F854E911ED5DACE004D2148 /* WKHomeWeikeController.m in Sources */,
-				1FB1563E1EE5971600600F8E /* WKTeacherIntro.m in Sources */,
+				1FB156531EED21C600600F8E /* UIView+Extension.m in Sources */,
+				1FB1563E1EE5971600600F8E /* WKTeacherIntroView.m in Sources */,
 				1FB156271EDDC49000600F8E /* WKBaseCollectionCell.m in Sources */,
 				1F854E891ED48BA0004D2148 /* WKSelectTextField.m in Sources */,
 				1F854E7A1ED18BE9004D2148 /* WKButtonTextField.m in Sources */,
@@ -2937,6 +2953,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Weike/PrefixHeader.pch";
 				INFOPLIST_FILE = Weike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhang.Weike;
@@ -2948,6 +2965,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Weike/PrefixHeader.pch";
 				INFOPLIST_FILE = Weike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhang.Weike;

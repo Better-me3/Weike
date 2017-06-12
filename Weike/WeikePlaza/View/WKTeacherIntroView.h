@@ -1,5 +1,5 @@
 //
-//  WKTeacherIntro.h
+//  WKTeacherIntroView.h
 //  Weike
 //
 //  Created by zhang on 17/6/5.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WKTeacherIntro : UIView
+@interface WKTeacherIntroView : UIView
 
 @end

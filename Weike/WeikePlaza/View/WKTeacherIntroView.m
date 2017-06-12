@@ -1,14 +1,14 @@
 //
-//  WKTeacherIntro.m
+//  WKTeacherIntroView.m
 //  Weike
 //
 //  Created by zhang on 17/6/5.
 //  Copyright © 2017年 zhang. All rights reserved.
 //
 
-#import "WKTeacherIntro.h"
+#import "WKTeacherIntroView.h"
 
-@implementation WKTeacherIntro
+@implementation WKTeacherIntroView
 
 /*
 // Only override drawRect: if you perform custom drawing.

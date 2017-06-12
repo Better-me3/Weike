@@ -78,4 +78,5 @@
     WKTeacherCourseController *courseController = [[WKTeacherCourseController alloc] init];
     [self presentViewController:courseController animated:YES completion:nil];
 }
+
 @end
