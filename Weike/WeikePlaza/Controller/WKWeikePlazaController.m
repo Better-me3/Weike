@@ -9,6 +9,7 @@
 #import "WKWeikePlazaController.h"
 #import "WKPlazaCell.h"
 #import "WKTeacherCourseController.h"
+#import "WKSearchController.h"
 
 #define kIdentifier @"plaza"
 
@@ -49,7 +50,8 @@
 
 - (void)selectWeike:(UIButton *)sender
 {
-
+    WKSearchController *searchVC = [[WKSearchController alloc] init];
+    [self presentViewController:searchVC animated:YES completion:nil];
 
 }
 

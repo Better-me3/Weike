@@ -465,7 +465,6 @@
 		1F854E431ED1854E004D2148 /* u3990p001.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F854B421ED1854E004D2148 /* u3990p001.png */; };
 		1F854E441ED1854E004D2148 /* u3994p000.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F854B431ED1854E004D2148 /* u3994p000.png */; };
 		1F854E451ED1854E004D2148 /* u3994p001.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F854B441ED1854E004D2148 /* u3994p001.png */; };
-		1F854E461ED1854E004D2148 /* u3101.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F854B461ED1854E004D2148 /* u3101.png */; };
 		1F854E471ED1854E004D2148 /* u3141.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F854B471ED1854E004D2148 /* u3141.png */; };
 		1F854E481ED1854E004D2148 /* u3141p000.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F854B481ED1854E004D2148 /* u3141p000.png */; };
 		1F854E4F1ED1854E004D2148 /* u4482.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F854B501ED1854E004D2148 /* u4482.png */; };
@@ -497,6 +496,10 @@
 		1FB156491EE6EB0400600F8E /* WKMyWeikeCollecCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156481EE6EB0400600F8E /* WKMyWeikeCollecCell.m */; };
 		1FB1564F1EE6F36100600F8E /* WKTeacherCourseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1564E1EE6F36100600F8E /* WKTeacherCourseController.m */; };
 		1FB156531EED21C600600F8E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156521EED21C600600F8E /* UIView+Extension.m */; };
+		1FB156581EEED56200600F8E /* WKSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156561EEED56200600F8E /* WKSearchController.m */; };
+		1FB156591EEED56200600F8E /* WKSearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB156571EEED56200600F8E /* WKSearchController.xib */; };
+		1FB1565C1EF026A800600F8E /* WKSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1565B1EF026A800600F8E /* WKSearchBar.m */; };
+		1FB156601EF02E2B00600F8E /* u3101@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB1565F1EF02E2B00600F8E /* u3101@3x.png */; };
 		1FCAFE891EDD3FEF0032E22F /* WKBaseCollectionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCAFE881EDD3FEF0032E22F /* WKBaseCollectionCellView.m */; };
 /* End PBXBuildFile section */
 
@@ -985,7 +988,6 @@
 		1F854B421ED1854E004D2148 /* u3990p001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u3990p001.png; sourceTree = "<group>"; };
 		1F854B431ED1854E004D2148 /* u3994p000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u3994p000.png; sourceTree = "<group>"; };
 		1F854B441ED1854E004D2148 /* u3994p001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u3994p001.png; sourceTree = "<group>"; };
-		1F854B461ED1854E004D2148 /* u3101.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u3101.png; sourceTree = "<group>"; };
 		1F854B471ED1854E004D2148 /* u3141.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u3141.png; sourceTree = "<group>"; };
 		1F854B481ED1854E004D2148 /* u3141p000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u3141p000.png; sourceTree = "<group>"; };
 		1F854B501ED1854E004D2148 /* u4482.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u4482.png; sourceTree = "<group>"; };
@@ -1033,6 +1035,12 @@
 		1FB156511EED21C600600F8E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		1FB156521EED21C600600F8E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		1FB156541EED22FA00600F8E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1FB156551EEED56200600F8E /* WKSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKSearchController.h; sourceTree = "<group>"; };
+		1FB156561EEED56200600F8E /* WKSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKSearchController.m; sourceTree = "<group>"; };
+		1FB156571EEED56200600F8E /* WKSearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKSearchController.xib; sourceTree = "<group>"; };
+		1FB1565A1EF026A800600F8E /* WKSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKSearchBar.h; sourceTree = "<group>"; };
+		1FB1565B1EF026A800600F8E /* WKSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKSearchBar.m; sourceTree = "<group>"; };
+		1FB1565F1EF02E2B00600F8E /* u3101@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "u3101@3x.png"; sourceTree = "<group>"; };
 		1FCAFE881EDD3FEF0032E22F /* WKBaseCollectionCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBaseCollectionCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2006,7 +2014,7 @@
 		1F854B451ED1854E004D2148 /* 资源列表 */ = {
 			isa = PBXGroup;
 			children = (
-				1F854B461ED1854E004D2148 /* u3101.png */,
+				1FB1565F1EF02E2B00600F8E /* u3101@3x.png */,
 				1F854B471ED1854E004D2148 /* u3141.png */,
 				1F854B481ED1854E004D2148 /* u3141p000.png */,
 			);
@@ -2130,6 +2138,9 @@
 			children = (
 				1FB156391EE2EAD400600F8E /* WKWeikePlazaController.h */,
 				1FB1563A1EE2EAD400600F8E /* WKWeikePlazaController.m */,
+				1FB156551EEED56200600F8E /* WKSearchController.h */,
+				1FB156561EEED56200600F8E /* WKSearchController.m */,
+				1FB156571EEED56200600F8E /* WKSearchController.xib */,
 				1FB1564D1EE6F36100600F8E /* WKTeacherCourseController.h */,
 				1FB1564E1EE6F36100600F8E /* WKTeacherCourseController.m */,
 			);
@@ -2154,6 +2165,8 @@
 				1FB156411EE5978400600F8E /* WKTeacherIntroView.xib */,
 				1FB156431EE5A53600600F8E /* WKTeacherCourseCell.h */,
 				1FB156441EE5A53600600F8E /* WKTeacherCourseCell.m */,
+				1FB1565A1EF026A800600F8E /* WKSearchBar.h */,
+				1FB1565B1EF026A800600F8E /* WKSearchBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2322,6 +2335,7 @@
 				1F854CD51ED1854E004D2148 /* u1891.png in Resources */,
 				1F854B7E1ED1854E004D2148 /* u3211.png in Resources */,
 				1F854CF71ED1854E004D2148 /* u144.png in Resources */,
+				1FB156601EF02E2B00600F8E /* u3101@3x.png in Resources */,
 				1F854DEC1ED1854E004D2148 /* u215.png in Resources */,
 				1F854C681ED1854E004D2148 /* u2632p000.png in Resources */,
 				1F854CA21ED1854E004D2148 /* u2893p000.png in Resources */,
@@ -2617,7 +2631,6 @@
 				1F854C6F1ED1854E004D2148 /* u2696p000.png in Resources */,
 				1F854D1C1ED1854E004D2148 /* u3483.png in Resources */,
 				1F854BE91ED1854E004D2148 /* u2189.png in Resources */,
-				1F854E461ED1854E004D2148 /* u3101.png in Resources */,
 				1F854D391ED1854E004D2148 /* u1787p002.png in Resources */,
 				1F854D7A1ED1854E004D2148 /* u4148.png in Resources */,
 				1F854E081ED1854E004D2148 /* u986.png in Resources */,
@@ -2649,6 +2662,7 @@
 				1F854CA81ED1854E004D2148 /* u2987.png in Resources */,
 				1F854E251ED1854E004D2148 /* u3801.png in Resources */,
 				1F854D821ED1854E004D2148 /* u4246.png in Resources */,
+				1FB156591EEED56200600F8E /* WKSearchController.xib in Resources */,
 				1F854CF11ED1854E004D2148 /* u2013p001.png in Resources */,
 				1F854C601ED1854E004D2148 /* u2617.png in Resources */,
 				1F854C3E1ED1854E004D2148 /* u2490.png in Resources */,
@@ -2798,6 +2812,7 @@
 				1FB1563B1EE2EAD400600F8E /* WKWeikePlazaController.m in Sources */,
 				1FB156321EE2DA1300600F8E /* WKPlazaCell.m in Sources */,
 				1F854E911ED5DACE004D2148 /* WKHomeWeikeController.m in Sources */,
+				1FB1565C1EF026A800600F8E /* WKSearchBar.m in Sources */,
 				1FB156531EED21C600600F8E /* UIView+Extension.m in Sources */,
 				1FB1563E1EE5971600600F8E /* WKTeacherIntroView.m in Sources */,
 				1FB156271EDDC49000600F8E /* WKBaseCollectionCell.m in Sources */,
@@ -2807,6 +2822,7 @@
 				1FB1564F1EE6F36100600F8E /* WKTeacherCourseController.m in Sources */,
 				1FB156231EDDC01400600F8E /* WKMyPublishCollecCell.m in Sources */,
 				1FB156491EE6EB0400600F8E /* WKMyWeikeCollecCell.m in Sources */,
+				1FB156581EEED56200600F8E /* WKSearchController.m in Sources */,
 				1F854E761ED187A0004D2148 /* WKLoginController.m in Sources */,
 				1F8547EA1ECDD9D5004D2148 /* AppDelegate.m in Sources */,
 				1F8547E71ECDD9D5004D2148 /* main.m in Sources */,
