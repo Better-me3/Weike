@@ -35,7 +35,7 @@
     //nicknameField
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 40, 35)];
     label.text = @"昵称";
-    label.font = [UIFont systemFontOfSize:14];
+    label.font = WKSystemFontSize(14);
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 45, 35)];
     [view addSubview:label];
     self.nicknameField.leftView = view;
@@ -44,7 +44,7 @@
     //gradeField
     UILabel *gradeLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 40, 35)];
     gradeLabel.text = @"年级";
-    gradeLabel.font = [UIFont systemFontOfSize:14];
+    gradeLabel.font = WKSystemFontSize(14);
     self.gradeField.leftV = gradeLabel;
     
     self.gradeField.fieldClicked = ^{
@@ -55,7 +55,7 @@
     //subjectField
     UILabel *subjectLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 40, 35)];
     subjectLabel.text = @"学科";
-    subjectLabel.font = [UIFont systemFontOfSize:14];
+    subjectLabel.font = WKSystemFontSize(14);
     self.subjectField.leftV = subjectLabel;
 
     self.subjectField.fieldClicked = ^{

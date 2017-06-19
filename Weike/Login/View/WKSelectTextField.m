@@ -43,7 +43,7 @@
 
     //leftView
     UILabel *Label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 40, 35)];
-    Label.font = [UIFont systemFontOfSize:14];
+    Label.font = WKSystemFontSize(14);
     UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 45, self.frame.size.height)];
     [leftView addSubview:Label];
     self.leftView = leftView;

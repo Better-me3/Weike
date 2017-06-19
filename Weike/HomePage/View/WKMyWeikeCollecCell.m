@@ -35,7 +35,7 @@
     [publishIndicator setBackgroundImage:[UIImage imageNamed:@"u401"] forState:UIControlStateNormal];
     [publishIndicator setTitle:@"已\n发\n布" forState:UIControlStateNormal];
     [publishIndicator setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    publishIndicator.font = [UIFont systemFontOfSize:12];
+    publishIndicator.font = WKSystemFontSize(12);
     publishIndicator.titleLabel.numberOfLines = 0;
     //    publishIndicator.titleEdgeInsets = UIEdgeInsetsMake(0, -15, 0, 0);
     [self addSubview:publishIndicator];

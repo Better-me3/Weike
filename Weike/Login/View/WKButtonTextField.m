@@ -61,7 +61,7 @@
     UIButton *button = [[UIButton alloc] init];
     [button setTitle:@"发送验证码" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    button.font = [UIFont systemFontOfSize:15];
+    button.titleLabel.font = WKSystemFontSize(15);
     [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:button];
     self.sendButton = button;

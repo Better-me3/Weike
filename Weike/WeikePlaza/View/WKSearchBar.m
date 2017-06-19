@@ -33,7 +33,7 @@
     self.leftView = imageV;
     self.leftViewMode = UITextFieldViewModeAlways;
     
-    self.font = [UIFont systemFontOfSize:15];
+    self.font = WKSystemFontSize(15);
     self.layer.cornerRadius = 15;
     self.backgroundColor = WKGrayColor(230, 255);
 }
