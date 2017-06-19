@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface WKResourceCell : UITableViewCell
+@property (nonatomic, assign) BOOL hideSize;
 
 @end

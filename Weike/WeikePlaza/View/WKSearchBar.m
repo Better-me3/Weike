@@ -10,6 +10,13 @@
 
 @implementation WKSearchBar
 
+- (void)drawRect:(CGRect)rect
+{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [[UIColor grayColor] set];
+    CGContextStrokeEllipseInRect(context, self.bounds);
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
@@ -34,8 +41,9 @@
     self.leftViewMode = UITextFieldViewModeAlways;
     
     self.font = WKSystemFontSize(15);
-    self.layer.cornerRadius = 15;
-    self.backgroundColor = WKGrayColor(230, 255);
+//    self.layer.cornerRadius = 15;
+    self.borderStyle = UITextBorderStyleRoundedRect;
+    self.backgroundColor = self.fieldColor;
 }
 
 + (instancetype)searchBarWithPlaceholder:(NSString *)placeholder

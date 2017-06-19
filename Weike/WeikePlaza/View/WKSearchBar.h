@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface WKSearchBar : UITextField
+@property (nonatomic, strong) UIColor *fieldColor;
 
 + (instancetype)searchBarWithPlaceholder:(NSString *)placeholder;
 

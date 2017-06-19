@@ -9,14 +9,15 @@
 #import "WKSearchController.h"
 #import "WKSearchBar.h"
 #import "WKSearchRecordView.h"
+#import "WKSearchBarAndCancelBtn.h"
 #import "WKSearchResultController.h"
+
 
 #define kMargin 15
 #define kSearchRecordMargin 20
 
 @interface WKSearchController ()<UITextFieldDelegate>
-@property (nonatomic, weak) WKSearchBar *searchBar;
-@property (nonatomic, weak) UIButton *cancelBtn;
+@property (nonatomic, weak) WKSearchBarAndCancelBtn *searchWrapper;
 @property (nonatomic, weak) UILabel *recentSearchL;
 @property (nonatomic, weak) UIView *recentSearchView;
 @property (nonatomic, weak) UILabel *noSearchL;
@@ -36,29 +37,24 @@
 
 - (void)setupSubviews
 {
-    WKSearchBar *searchBar = [WKSearchBar searchBarWithPlaceholder:@"搜索微课"];
-    searchBar.frame = CGRectMake(kMargin, 25, kScreenWidth * 0.8, 30);
-    [self.view addSubview:searchBar];
-    self.searchBar = searchBar;
-    _searchBar.delegate = self;
+    WKSearchBarAndCancelBtn *searchWrapper = [[WKSearchBarAndCancelBtn alloc] initWithFrame:CGRectMake(kMargin, 25, kScreenWidth - 2* kMargin, 30)];
+    searchWrapper.fieldColor = WKGrayColor(230, 255);
+    searchWrapper.searchBar.delegate = self;
+    searchWrapper.cancelClick = ^{
+        [self dismissViewControllerAnimated:YES completion:nil];
+        
+    };
+    [self.view addSubview:searchWrapper];
+    self.searchWrapper = searchWrapper;
     
-    UIButton *cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
-    cancelBtn.titleLabel.font = WKSystemFontSize(15);
-    [cancelBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    cancelBtn.frame = CGRectMake(CGRectGetMaxX(_searchBar.frame) + 5, CGRectGetMinY(_searchBar.frame), kScreenWidth - CGRectGetMaxX(_searchBar.frame) -  kMargin, 30);
-    [cancelBtn addTarget:self action:@selector(cancelSearch:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:cancelBtn];
-    self.cancelBtn = cancelBtn;
-
     //最近搜索
-    UILabel *recentSearchL = [[UILabel alloc] initWithFrame:CGRectMake(kMargin, CGRectGetMaxY(_searchBar.frame) + 12, 100, 15)];
+    UILabel *recentSearchL = [[UILabel alloc] initWithFrame:CGRectMake(kMargin, CGRectGetMaxY(_searchWrapper.frame) + 12, 100, 15)];
     recentSearchL.font = WKSystemFontSize(14);
     recentSearchL.text = @"最近搜索";
     [self.view addSubview:recentSearchL];
     
     NSArray *recentArray = nil;
-//    recentArray = @[@"可调节电脑支架", @"折叠式电脑支架", @"白色露肩T恤", @"铝合金电脑支架", @"金赏猫罐头", @"主子的小鱼干", @"加湿器"];
+    recentArray = @[@"可调节电脑支架", @"折叠式电脑支架", @"白色露肩T恤", @"铝合金电脑支架", @"金赏猫罐头", @"主子的小鱼干", @"加湿器"];
     if (recentArray.count) {
         WKSearchRecordView *recentSearchView = [[WKSearchRecordView alloc] initWithFrame:CGRectMake(kSearchRecordMargin, CGRectGetMaxY(recentSearchL.frame) + 10, kScreenWidth - kSearchRecordMargin * 2, 100) dataArray:recentArray];
         [self.view addSubview:recentSearchView];
@@ -90,11 +86,7 @@
 }
 
 #pragma mark -- Action
-- (void)cancelSearch:(UIButton *)sender
-{//取消 -- 进入在线资源界面
-    
 
-}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {

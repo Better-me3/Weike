@@ -21,10 +21,10 @@
             </objects>
             <point key="canvasLocation" x="1564" y="-232"/>
         </scene>
-        <!--Weike Plaza Controller-->
+        <!--Online Resource View Controller-->
         <scene sceneID="49D-Kg-PIJ">
             <objects>
-                <viewController id="dfa-RS-qrK" customClass="WKWeikePlazaController" sceneMemberID="viewController">
+                <viewController id="dfa-RS-qrK" customClass="WKOnlineResourceViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UGe-ca-7Tn"/>
                         <viewControllerLayoutGuide type="bottom" id="KDu-Tf-nui"/>

@@ -1,26 +1,25 @@
 //
-//  WKOnlineResourceViewController.m
+//  WKResourceFileController.m
 //  Weike
 //
-//  Created by zhang on 17/6/18.
+//  Created by zhang on 17/6/19.
 //  Copyright © 2017年 zhang. All rights reserved.
 //
 
-#import "WKOnlineResourceViewController.h"
+#import "WKResourceFileController.h"
 #import "WKSearchBar.h"
 #import "WKResourceCell.h"
-#import "WKResourceFileController.h"
 
 #define kMargin 15
 #define kIdentifier @"source"
 
-@interface WKOnlineResourceViewController ()<UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface WKResourceFileController ()<UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, weak) WKSearchBar *searchBar;
 @property (nonatomic, weak) UITableView *tableView;
 
 @end
 
-@implementation WKOnlineResourceViewController
+@implementation WKResourceFileController
 
 - (UITableView *)tableView
 {
@@ -45,7 +44,12 @@
 - (void)setupSubviews
 {
     self.title = @"在线资源";
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+    //change left item
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"u2842"] style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
+    backItem.tintColor = [UIColor darkGrayColor];
+    self.navigationItem.leftBarButtonItem = backItem;
+
     WKSearchBar *searchBar = [WKSearchBar searchBarWithPlaceholder:@""];
     searchBar.frame = CGRectMake(kScreenWidth * 0.05, 70, kScreenWidth * 0.9, 30);
     searchBar.fieldColor = [UIColor whiteColor];
@@ -67,8 +71,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     WKResourceCell *cell = [tableView dequeueReusableCellWithIdentifier:kIdentifier];
-    cell.hideSize = YES;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//    cell.hideSize = YES;
     return cell;
 }
 
@@ -80,8 +84,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    WKResourceFileController *fileVC = [[WKResourceFileController alloc] init];
-    [self.navigationController pushViewController:fileVC animated:YES];
+    
 }
 
 #pragma mark -- UITextFieldDelegate
@@ -90,5 +93,12 @@
 #warning TODO
     [self.tableView reloadData];
 }
+
+
+- (void)back:(UIBarButtonItem *)item
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 
 @end

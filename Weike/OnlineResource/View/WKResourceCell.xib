@@ -39,8 +39,15 @@
                         </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hl-4F-maw">
-                        <rect key="frame" x="120" y="73" width="211" height="36"/>
+                        <rect key="frame" x="120" y="73" width="156" height="36"/>
                         <color key="backgroundColor" red="1" green="0.953141338" blue="0.72021796270000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKz-Sh-v73">
+                        <rect key="frame" x="296" y="73" width="30" height="36"/>
+                        <color key="backgroundColor" red="0.54282953889999996" green="0.88694371729999999" blue="0.56696287170000004" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -55,24 +62,31 @@
                     <constraint firstItem="16K-gR-4Wf" firstAttribute="leading" secondItem="YWs-qy-u2p" secondAttribute="trailing" constant="15" id="QEb-QP-5cN"/>
                     <constraint firstItem="4hl-4F-maw" firstAttribute="height" secondItem="YWs-qy-u2p" secondAttribute="height" multiplier="0.4" id="SOA-2d-Hyw"/>
                     <constraint firstItem="4hl-4F-maw" firstAttribute="bottom" secondItem="YWs-qy-u2p" secondAttribute="bottom" id="T99-cq-wGd"/>
+                    <constraint firstItem="pKz-Sh-v73" firstAttribute="leading" secondItem="4hl-4F-maw" secondAttribute="trailing" constant="20" id="Vf5-3z-AKP"/>
                     <constraint firstAttribute="trailing" secondItem="16K-gR-4Wf" secondAttribute="trailing" constant="15" id="WvL-Mk-jXp"/>
+                    <constraint firstItem="pKz-Sh-v73" firstAttribute="centerY" secondItem="4hl-4F-maw" secondAttribute="centerY" id="cY7-5X-0zY"/>
                     <constraint firstItem="YWs-qy-u2p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="fFu-5h-b5N"/>
                     <constraint firstItem="16K-gR-4Wf" firstAttribute="height" secondItem="YWs-qy-u2p" secondAttribute="height" multiplier="0.5" id="gJ3-vc-KBy"/>
                     <constraint firstItem="4hl-4F-maw" firstAttribute="top" secondItem="16K-gR-4Wf" secondAttribute="bottom" constant="5" id="h6C-fd-V1f"/>
+                    <constraint firstItem="4hl-4F-maw" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.45" id="jda-el-sgn"/>
+                    <constraint firstItem="pKz-Sh-v73" firstAttribute="height" secondItem="4hl-4F-maw" secondAttribute="height" id="oBk-w8-rR1"/>
                     <constraint firstItem="YWs-qy-u2p" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oN5-cV-5sc"/>
                     <constraint firstItem="YWs-qy-u2p" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.7" id="yzB-92-78t"/>
+                    <constraint firstAttribute="trailing" secondItem="pKz-Sh-v73" secondAttribute="trailing" constant="20" id="zMd-Gx-J7z"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
                         <exclude reference="E3t-dm-OaU"/>
                         <exclude reference="FbZ-fd-YJg"/>
+                        <exclude reference="Gvx-So-m4Z"/>
                         <exclude reference="h6C-fd-V1f"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
             <connections>
-                <outlet property="courseName" destination="16K-gR-4Wf" id="0wH-pI-pXl"/>
-                <outlet property="dateTime" destination="4hl-4F-maw" id="6sQ-5c-j8d"/>
+                <outlet property="courseNameLabel" destination="16K-gR-4Wf" id="GbE-WV-uxV"/>
+                <outlet property="dateTimeLabel" destination="4hl-4F-maw" id="M9p-ve-vxl"/>
+                <outlet property="fileSizeLabel" destination="pKz-Sh-v73" id="axZ-WG-1xi"/>
                 <outlet property="picture" destination="YWs-qy-u2p" id="ywR-lk-lKW"/>
             </connections>
             <point key="canvasLocation" x="481" y="309"/>

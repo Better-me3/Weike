@@ -505,6 +505,8 @@
 		1FB156681EF65C0100600F8E /* WKResourceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB156661EF65C0100600F8E /* WKResourceCell.xib */; };
 		1FB1566B1EF6630500600F8E /* WKSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1566A1EF6630500600F8E /* WKSearchResultController.m */; };
 		1FB1566E1EF6877300600F8E /* WKOnlineResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1566D1EF6877300600F8E /* WKOnlineResourceViewController.m */; };
+		1FB156711EF7771700600F8E /* WKSearchBarAndCancelBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156701EF7771700600F8E /* WKSearchBarAndCancelBtn.m */; };
+		1FB156741EF820BC00600F8E /* WKResourceFileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156731EF820BC00600F8E /* WKResourceFileController.m */; };
 		1FCAFE891EDD3FEF0032E22F /* WKBaseCollectionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCAFE881EDD3FEF0032E22F /* WKBaseCollectionCellView.m */; };
 /* End PBXBuildFile section */
 
@@ -1055,6 +1057,10 @@
 		1FB1566A1EF6630500600F8E /* WKSearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKSearchResultController.m; sourceTree = "<group>"; };
 		1FB1566C1EF6877300600F8E /* WKOnlineResourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKOnlineResourceViewController.h; sourceTree = "<group>"; };
 		1FB1566D1EF6877300600F8E /* WKOnlineResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKOnlineResourceViewController.m; sourceTree = "<group>"; };
+		1FB1566F1EF7771700600F8E /* WKSearchBarAndCancelBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKSearchBarAndCancelBtn.h; sourceTree = "<group>"; };
+		1FB156701EF7771700600F8E /* WKSearchBarAndCancelBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKSearchBarAndCancelBtn.m; sourceTree = "<group>"; };
+		1FB156721EF820BC00600F8E /* WKResourceFileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKResourceFileController.h; sourceTree = "<group>"; };
+		1FB156731EF820BC00600F8E /* WKResourceFileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKResourceFileController.m; sourceTree = "<group>"; };
 		1FCAFE881EDD3FEF0032E22F /* WKBaseCollectionCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBaseCollectionCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1158,6 +1164,8 @@
 				1F8548281ED184F3004D2148 /* WKBaseNavigationController.m */,
 				1F8548291ED184F3004D2148 /* WKBaseViewController.h */,
 				1F85482A1ED184F3004D2148 /* WKBaseViewController.m */,
+				1FB1566F1EF7771700600F8E /* WKSearchBarAndCancelBtn.h */,
+				1FB156701EF7771700600F8E /* WKSearchBarAndCancelBtn.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -2131,6 +2139,8 @@
 			children = (
 				1FB1566C1EF6877300600F8E /* WKOnlineResourceViewController.h */,
 				1FB1566D1EF6877300600F8E /* WKOnlineResourceViewController.m */,
+				1FB156721EF820BC00600F8E /* WKResourceFileController.h */,
+				1FB156731EF820BC00600F8E /* WKResourceFileController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2842,12 +2852,14 @@
 				1FB156531EED21C600600F8E /* UIView+Extension.m in Sources */,
 				1FB1563E1EE5971600600F8E /* WKTeacherIntroView.m in Sources */,
 				1FB156271EDDC49000600F8E /* WKBaseCollectionCell.m in Sources */,
+				1FB156711EF7771700600F8E /* WKSearchBarAndCancelBtn.m in Sources */,
 				1F854E891ED48BA0004D2148 /* WKSelectTextField.m in Sources */,
 				1FB156631EF2C40500600F8E /* WKSearchRecordView.m in Sources */,
 				1F854E7A1ED18BE9004D2148 /* WKButtonTextField.m in Sources */,
 				1F85482C1ED184F3004D2148 /* WKBaseViewController.m in Sources */,
 				1FB1564F1EE6F36100600F8E /* WKTeacherCourseController.m in Sources */,
 				1FB156231EDDC01400600F8E /* WKMyPublishCollecCell.m in Sources */,
+				1FB156741EF820BC00600F8E /* WKResourceFileController.m in Sources */,
 				1FB156491EE6EB0400600F8E /* WKMyWeikeCollecCell.m in Sources */,
 				1FB156581EEED56200600F8E /* WKSearchController.m in Sources */,
 				1F854E761ED187A0004D2148 /* WKLoginController.m in Sources */,

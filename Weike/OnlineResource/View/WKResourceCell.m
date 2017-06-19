@@ -10,8 +10,9 @@
 
 @interface WKResourceCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *picture;
-@property (weak, nonatomic) IBOutlet UILabel *courseName;
-@property (weak, nonatomic) IBOutlet UILabel *dateTime;
+@property (weak, nonatomic) IBOutlet UILabel *courseNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *fileSizeLabel;
 
 @end
 
@@ -28,4 +29,8 @@
     // Configure the view for the selected state
 }
 
+- (void)setHideSize:(BOOL)hideSize
+{
+    self.fileSizeLabel.hidden = hideSize;
+}
 @end
