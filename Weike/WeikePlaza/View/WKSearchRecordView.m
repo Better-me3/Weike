@@ -26,7 +26,7 @@
             [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             button.titleLabel.font = WKSystemFontSize(14);
             [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-            button.tag = 110 + i;
+            button.tag = kSearchButtonInitialTag + i;
             
             CGSize btnSize = [content boundingRectWithSize:CGSizeMake(frame.size.width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:WKSystemFontSize(14)} context:nil].size;
             CGFloat btnW = btnSize.width + 20;

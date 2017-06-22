@@ -57,7 +57,11 @@
     self.searchBar = searchBar;
     _searchBar.delegate = self;
     
-    self.tableView.frame = CGRectMake(0, CGRectGetMaxY(_searchBar.frame) + 5, kScreenWidth, kScreenHeight - CGRectGetHeight(_searchBar.frame));
+    UIImageView *line = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"u2144"]];
+    line.frame = CGRectMake(0, CGRectGetMaxY(_searchBar.frame) + 10, kScreenWidth, 1.5);
+    [self.view addSubview:line];
+    
+    self.tableView.frame = CGRectMake(0, CGRectGetMaxY(line.frame) + 5, kScreenWidth, kScreenHeight - CGRectGetHeight(line.frame));
     [self.tableView registerNib:[UINib nibWithNibName:@"WKResourceCell" bundle:nil] forCellReuseIdentifier:kIdentifier];
 }
 

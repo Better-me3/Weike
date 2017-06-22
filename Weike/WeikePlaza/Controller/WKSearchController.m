@@ -19,10 +19,10 @@
 @interface WKSearchController ()<UITextFieldDelegate>
 @property (nonatomic, weak) WKSearchBarAndCancelBtn *searchWrapper;
 @property (nonatomic, weak) UILabel *recentSearchL;
-@property (nonatomic, weak) UIView *recentSearchView;
+@property (nonatomic, weak) WKSearchRecordView *recentSearchView;
 @property (nonatomic, weak) UILabel *noSearchL;
 @property (nonatomic, weak) UILabel *topSearchL;
-@property (nonatomic, weak) UIView *topSearchView;
+@property (nonatomic, weak) WKSearchRecordView *topSearchView;
 
 @end
 
@@ -59,6 +59,12 @@
         WKSearchRecordView *recentSearchView = [[WKSearchRecordView alloc] initWithFrame:CGRectMake(kSearchRecordMargin, CGRectGetMaxY(recentSearchL.frame) + 10, kScreenWidth - kSearchRecordMargin * 2, 100) dataArray:recentArray];
         [self.view addSubview:recentSearchView];
         self.recentSearchView = recentSearchView;
+        self.recentSearchView.btnClickBlock = ^(NSInteger tag){
+            NSString *selectWord = recentArray[tag - kSearchButtonInitialTag];
+            WKSearchResultController *resultVC = [[WKSearchResultController alloc] init];
+            resultVC.searchWord = selectWord;
+            [self presentViewController:resultVC animated:YES completion:nil];
+        };
     }
     else
     {
@@ -82,7 +88,12 @@
     WKSearchRecordView *topSearchView = [[WKSearchRecordView alloc] initWithFrame:CGRectMake(kSearchRecordMargin, CGRectGetMaxY(hotSearchL.frame) + 10, kScreenWidth - kSearchRecordMargin * 2, 100) dataArray:hotArray];
     [self.view addSubview:topSearchView];
     self.topSearchView = topSearchView;
-
+    self.topSearchView.btnClickBlock = ^(NSInteger tag){
+        NSString *selectWord = hotArray[tag - kSearchButtonInitialTag];
+        WKSearchResultController *resultVC = [[WKSearchResultController alloc] init];
+        resultVC.searchWord = selectWord;
+        [self presentViewController:resultVC animated:YES completion:nil];
+    };
 }
 
 #pragma mark -- Action

@@ -10,8 +10,8 @@
 #import "WKSearchBar.h"
 #import "WKResourceCell.h"
 #import "WKResourceFileController.h"
+#import "WKSearchBarMask.h"
 
-#define kMargin 15
 #define kIdentifier @"source"
 
 @interface WKOnlineResourceViewController ()<UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -53,7 +53,11 @@
     self.searchBar = searchBar;
     _searchBar.delegate = self;
     
-    self.tableView.frame = CGRectMake(0, CGRectGetMaxY(_searchBar.frame) + 5, kScreenWidth, kScreenHeight - CGRectGetHeight(_searchBar.frame));
+    UIImageView *line = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"u2144"]];
+    line.frame = CGRectMake(0, CGRectGetMaxY(_searchBar.frame) + 5, kScreenWidth, 1.5);
+    [self.view addSubview:line];
+    
+    self.tableView.frame = CGRectMake(0, CGRectGetMaxY(line.frame) + 5, kScreenWidth, kScreenHeight - CGRectGetHeight(line.frame));
     [self.tableView registerNib:[UINib nibWithNibName:@"WKResourceCell" bundle:nil] forCellReuseIdentifier:kIdentifier];
 }
 
@@ -85,10 +89,23 @@
 }
 
 #pragma mark -- UITextFieldDelegate
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    if ([textField isEqual:_searchBar])
+    {
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        WKSearchBarMask *searchMask = [[WKSearchBarMask alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        searchMask.delegate = self;
+        [window addSubview:searchMask];
+        
+    }
+    return YES;
+}
+
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-#warning TODO
-    [self.tableView reloadData];
+#warning TODO, 有蒙版的输入框触发
+    
 }
 
 @end

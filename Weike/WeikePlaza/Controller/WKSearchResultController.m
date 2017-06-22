@@ -62,8 +62,11 @@
     [naviBackgroundV addSubview:searchWrapper];
     self.searchWrapper = searchWrapper;
 
+    UIImageView *line = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"u2144"]];
+    line.frame = CGRectMake(0, CGRectGetMaxY(naviBackgroundV.frame), kScreenWidth, 1);
+    [self.view addSubview:line];
     
-    self.tableView.frame = CGRectMake(0, CGRectGetMaxY(naviBackgroundV.frame), kScreenWidth, kScreenHeight - CGRectGetHeight(naviBackgroundV.frame));
+    self.tableView.frame = CGRectMake(0, CGRectGetMaxY(line.frame), kScreenWidth, kScreenHeight - CGRectGetHeight(line.frame));
     [self.tableView registerNib:[UINib nibWithNibName:@"WKResourceCell" bundle:nil] forCellReuseIdentifier:kIdentifier];
 }
 
