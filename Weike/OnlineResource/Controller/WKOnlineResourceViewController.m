@@ -11,13 +11,14 @@
 #import "WKResourceCell.h"
 #import "WKResourceFileController.h"
 #import "WKSearchBarMask.h"
+#import "WKSearchResultController.h"
 
 #define kIdentifier @"source"
 
 @interface WKOnlineResourceViewController ()<UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, weak) WKSearchBar *searchBar;
 @property (nonatomic, weak) UITableView *tableView;
-
+@property (nonatomic, weak) WKSearchBarMask *searchMask;
 @end
 
 @implementation WKOnlineResourceViewController
@@ -46,7 +47,7 @@
 {
     self.title = @"在线资源";
     
-    WKSearchBar *searchBar = [WKSearchBar searchBarWithPlaceholder:@""];
+    WKSearchBar *searchBar = [WKSearchBar searchBarWithPlaceholder:@"搜索"];
     searchBar.frame = CGRectMake(kScreenWidth * 0.05, 70, kScreenWidth * 0.9, 30);
     searchBar.fieldColor = [UIColor whiteColor];
     [self.view addSubview:searchBar];
@@ -89,6 +90,7 @@
 }
 
 #pragma mark -- UITextFieldDelegate
+//Use this method to allow or prevent the editing of the text field’s contents.
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
     if ([textField isEqual:_searchBar])
@@ -97,15 +99,27 @@
         WKSearchBarMask *searchMask = [[WKSearchBarMask alloc] initWithFrame:[UIScreen mainScreen].bounds];
         searchMask.delegate = self;
         [window addSubview:searchMask];
-        
+        self.searchMask = searchMask;
+        [searchMask.searchWrapper.searchBar becomeFirstResponder];
+        return NO;
     }
     return YES;
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-#warning TODO, 有蒙版的输入框触发
+#warning TODO
     
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.searchMask removeFromSuperview];
+    
+    WKSearchResultController *resultVC = [[WKSearchResultController alloc] init];
+    resultVC.searchWord = textField.text;
+    [self presentViewController:resultVC animated:YES completion:nil];
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end

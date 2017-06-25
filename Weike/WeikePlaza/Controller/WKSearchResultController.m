@@ -55,7 +55,7 @@
     searchWrapper.fieldColor = [UIColor whiteColor];
     searchWrapper.searchBar.delegate = self;
     searchWrapper.cancelClick = ^{
-        //取消 -- 进入在线资源界面, TODO
+#warning  TODO 取消 -- 进入在线资源界面
         [self dismissViewControllerAnimated:YES completion:nil];
 
     };
@@ -98,10 +98,12 @@
 }
 
 #pragma mark -- UITextFieldDelegate
-- (void)textFieldDidEndEditing:(UITextField *)textField
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
+    [textField resignFirstResponder];
 #warning TODO
-    [self.tableView reloadData];
+//    [self.tableView reloadData];
+    return YES;
 }
 
 @end

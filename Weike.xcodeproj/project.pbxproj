@@ -2174,9 +2174,9 @@
 				1FB1563A1EE2EAD400600F8E /* WKWeikePlazaController.m */,
 				1FB156551EEED56200600F8E /* WKSearchController.h */,
 				1FB156561EEED56200600F8E /* WKSearchController.m */,
+				1FB156571EEED56200600F8E /* WKSearchController.xib */,
 				1FB156691EF6630500600F8E /* WKSearchResultController.h */,
 				1FB1566A1EF6630500600F8E /* WKSearchResultController.m */,
-				1FB156571EEED56200600F8E /* WKSearchController.xib */,
 				1FB1564D1EE6F36100600F8E /* WKTeacherCourseController.h */,
 				1FB1564E1EE6F36100600F8E /* WKTeacherCourseController.m */,
 			);

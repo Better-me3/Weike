@@ -50,7 +50,7 @@
     backItem.tintColor = [UIColor darkGrayColor];
     self.navigationItem.leftBarButtonItem = backItem;
 
-    WKSearchBar *searchBar = [WKSearchBar searchBarWithPlaceholder:@""];
+    WKSearchBar *searchBar = [WKSearchBar searchBarWithPlaceholder:@"搜索"];
     searchBar.frame = CGRectMake(kScreenWidth * 0.05, 70, kScreenWidth * 0.9, 30);
     searchBar.fieldColor = [UIColor whiteColor];
     [self.view addSubview:searchBar];
@@ -92,12 +92,21 @@
 }
 
 #pragma mark -- UITextFieldDelegate
-- (void)textFieldDidEndEditing:(UITextField *)textField
-{
-#warning TODO
-    [self.tableView reloadData];
-}
+//after resign first responder, hide keyboard
+//- (void)textFieldDidEndEditing:(UITextField *)textField
+//{
+//#warning TODO
+//    [self.tableView reloadData];
+//}
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+#warning TODO
+//    [self.tableView reloadData];
+    
+    return YES;
+}
 
 - (void)back:(UIBarButtonItem *)item
 {
