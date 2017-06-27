@@ -508,6 +508,7 @@
 		1FB156711EF7771700600F8E /* WKSearchBarAndCancelBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156701EF7771700600F8E /* WKSearchBarAndCancelBtn.m */; };
 		1FB156741EF820BC00600F8E /* WKResourceFileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156731EF820BC00600F8E /* WKResourceFileController.m */; };
 		1FB156771EFC0E9500600F8E /* WKSearchBarMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156761EFC0E9500600F8E /* WKSearchBarMask.m */; };
+		1FB1567A1F0290C700600F8E /* WKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB156791F0290C700600F8E /* WKMineViewController.m */; };
 		1FCAFE891EDD3FEF0032E22F /* WKBaseCollectionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCAFE881EDD3FEF0032E22F /* WKBaseCollectionCellView.m */; };
 /* End PBXBuildFile section */
 
@@ -1064,6 +1065,8 @@
 		1FB156731EF820BC00600F8E /* WKResourceFileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKResourceFileController.m; sourceTree = "<group>"; };
 		1FB156751EFC0E9500600F8E /* WKSearchBarMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKSearchBarMask.h; sourceTree = "<group>"; };
 		1FB156761EFC0E9500600F8E /* WKSearchBarMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKSearchBarMask.m; sourceTree = "<group>"; };
+		1FB156781F0290C700600F8E /* WKMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKMineViewController.h; sourceTree = "<group>"; };
+		1FB156791F0290C700600F8E /* WKMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKMineViewController.m; sourceTree = "<group>"; };
 		1FCAFE881EDD3FEF0032E22F /* WKBaseCollectionCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBaseCollectionCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2121,6 +2124,8 @@
 		1F854E681ED18628004D2148 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1FB156781F0290C700600F8E /* WKMineViewController.h */,
+				1FB156791F0290C700600F8E /* WKMineViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2851,6 +2856,7 @@
 				1FCAFE891EDD3FEF0032E22F /* WKBaseCollectionCellView.m in Sources */,
 				1FB1563B1EE2EAD400600F8E /* WKWeikePlazaController.m in Sources */,
 				1FB156321EE2DA1300600F8E /* WKPlazaCell.m in Sources */,
+				1FB1567A1F0290C700600F8E /* WKMineViewController.m in Sources */,
 				1F854E911ED5DACE004D2148 /* WKHomeWeikeController.m in Sources */,
 				1FB1565C1EF026A800600F8E /* WKSearchBar.m in Sources */,
 				1FB1566B1EF6630500600F8E /* WKSearchResultController.m in Sources */,
